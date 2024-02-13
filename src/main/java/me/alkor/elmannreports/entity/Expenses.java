@@ -24,7 +24,7 @@ public class Expenses {
     private double expense;        //представительские расходы
     private double office;        //канцелярия, чай и т.п.
 
-    private double product;     //товар для продажи
+    private double goods;     //товар для продажи
     private double extract;     //сырьё, экстракты
     private double wrapper;     //упаковка (пеналы, этикетки и т.п.)
     private double packaging;   //гофротара
