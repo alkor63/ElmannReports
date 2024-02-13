@@ -1,9 +1,23 @@
 package me.alkor.elmannreports.entity;
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.stereotype.Component;
+
+@Component
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@Entity
+@Table(name = "expenses")
 public class Expenses {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id",  nullable = false)
+    @Column(name = "expenses_id",  nullable = false)
     private int id;
     private int dateMonth;
 
@@ -32,6 +46,4 @@ public class Expenses {
 
     private double other;       //прочие расходы
 
-    public Expenses() {
-    }
 }
